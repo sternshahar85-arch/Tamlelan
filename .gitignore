@@ -1,0 +1,28 @@
+# Secrets and credentials - never commit
+Keys.txt
+credentials.json
+service_account.json
+token.json
+
+# Build artifacts and binaries
+build/
+dist/
+scribe.spec
+scribe.exe
+__pycache__/
+*.pyc
+
+# Runtime artifacts
+*.log
+*.wav
+
+# Local-only planning docs, drafts, and orphaned scripts (not part of the live system)
+Specs/
+JHE_Master_Context_for_Claude_Code.md
+pipeline.py
+check_models.py
+*טקסט חדש.txt
+
+# Editor/tooling state
+.claude/
+.vscode/
