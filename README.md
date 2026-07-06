@@ -1,10 +1,12 @@
 # Tamlelan - Autonomous AI Meeting Agent
 
-Tamlelan is a private meeting agent built on pay-per-use cloud infrastructure rather than a fixed monthly SaaS subscription: it records a meeting locally, uploads the audio to Google Cloud, runs it through a serverless Gemini pipeline for analysis, and delivers a structured summary, a full transcript, and (when relevant) an architecture diagram to Google Drive - with no manual transcription step and no third-party SaaS dependency. It is in active daily personal use by the author.
+Tamlelan is a private meeting agent, in active daily personal use by its author: it records a meeting locally, uploads the audio to Google Cloud, runs it through a serverless Gemini pipeline for analysis, and delivers a structured summary, a full transcript, and (when relevant) an architecture diagram to Google Drive - with no manual transcription step. It runs on pay-per-use Google Cloud billing (Gemini API calls, Cloud Run invocations, storage), averaging roughly half the cost of a comparable subscription-based transcription tool.
+
+One-page architecture overview: [`docs/Tamlelan One-Pager.pdf`](docs/Tamlelan%20One-Pager.pdf).
 
 ## Why this exists
 
-Meeting notes are usually either skipped or written from memory afterward. Tamlelan removes that tradeoff: press Start, talk, press End, and a structured executive summary, decisions log, action items table, and full verbatim transcript are waiting in Drive a few minutes later - fully automated, with no fixed recurring subscription fee. Operating cost is variable and usage-based (Google Cloud billing per Gemini API call, Cloud Run invocation, and storage), not zero - a deliberate build-vs-buy trade-off against a SaaS transcription subscription.
+Meeting notes are usually either skipped or written from memory afterward. Tamlelan removes that tradeoff: press Start, talk, press End, and a structured executive summary, decisions log, action items table, and full verbatim transcript are waiting in Drive a few minutes later, fully automated.
 
 ## Architecture
 
