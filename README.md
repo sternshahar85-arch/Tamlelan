@@ -1,10 +1,10 @@
 # Tamlelan - Autonomous AI Meeting Agent
 
-Tamlelan is a private, zero-subscription meeting agent: it records a meeting locally, uploads the audio to Google Cloud, runs it through a serverless Gemini pipeline for analysis, and delivers a structured summary, a full transcript, and (when relevant) an architecture diagram to Google Drive - with no manual transcription step and no third-party SaaS dependency. It is in active daily personal use by the author.
+Tamlelan is a private meeting agent built on pay-per-use cloud infrastructure rather than a fixed monthly SaaS subscription: it records a meeting locally, uploads the audio to Google Cloud, runs it through a serverless Gemini pipeline for analysis, and delivers a structured summary, a full transcript, and (when relevant) an architecture diagram to Google Drive - with no manual transcription step and no third-party SaaS dependency. It is in active daily personal use by the author.
 
 ## Why this exists
 
-Meeting notes are usually either skipped or written from memory afterward. Tamlelan removes that tradeoff: press Start, talk, press End, and a structured executive summary, decisions log, action items table, and full verbatim transcript are waiting in Drive a few minutes later - fully automated, with no recurring subscription cost.
+Meeting notes are usually either skipped or written from memory afterward. Tamlelan removes that tradeoff: press Start, talk, press End, and a structured executive summary, decisions log, action items table, and full verbatim transcript are waiting in Drive a few minutes later - fully automated, with no fixed recurring subscription fee. Operating cost is variable and usage-based (Google Cloud billing per Gemini API call, Cloud Run invocation, and storage), not zero - a deliberate build-vs-buy trade-off against a SaaS transcription subscription.
 
 ## Architecture
 
