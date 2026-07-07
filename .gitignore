@@ -19,6 +19,7 @@ __pycache__/
 # Local-only planning docs, drafts, and orphaned scripts (not part of the live system)
 Specs/
 JHE_Master_Context_for_Claude_Code.md
+Tamlelan_Master_Context_for_Claude_Code.md
 pipeline.py
 check_models.py
 *טקסט חדש.txt
